@@ -1,0 +1,1 @@
+# kubernetes-secure-docker-registry
