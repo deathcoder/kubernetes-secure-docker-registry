@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  labels:
+    kubernetes.io/cluster-service: "true"
+    app: private-registry-volume
+  name: private-registry-volume
+  namespace: docker-registry
+spec:
+  accessModes:
+  - ReadWriteOnce
+  resources:
+    requests:
+      storage: 3Gi
